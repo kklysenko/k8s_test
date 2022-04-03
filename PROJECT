@@ -1,0 +1,9 @@
+domain: k8stest.com
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: test
+repo: github.com/kklysenko/k8s_test
+version: "3"
