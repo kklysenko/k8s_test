@@ -26,6 +26,7 @@ import (
 
 // DemoDeploymentSpec defines the desired state of DemoDeployment
 type DemoDeploymentSpec struct {
+	// +kubebuilder:validation:Maximum=2
 	Replicas int32 `json:"replicas,omitempty"`
 
 	Selector *metav1.LabelSelector `json:"selector,omitempty"`
